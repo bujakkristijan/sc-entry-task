@@ -22,6 +22,12 @@
     --hc-text-color-2: #5A6473;
     --logo-color: #101010;
     --client-desc-color: #7D8589;
+    --hiw-title-color: #000339;
+    --how-to-arrow-text-color: #0689FF;
+    --how-to-text-color: #3B3C45;
+
+    
+
 }
 
 body{
@@ -171,4 +177,82 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+/***************** HOW IT WORKS ********************/
+.how-it-works-main-container{
+    padding: 100px 165px;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    text-align: center;
+}
+
+
+
+.how-it-works-text-container{
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+}
+
+.how-it-works-title{
+    color: var(--hiw-title-color);
+    font-size: 35px;
+    line-height: 35px;
+}
+
+.how-it-works-title::before{
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: var(--hiw-title-color);
+    width: 41px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.how-it-works-description{
+    margin-top: 30px;
+    color: var(--hc-text-color-2);
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.how-it-works-seller-type-container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+.how-it-works-icon-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: var(--how-to-text-color);
+}
+
+.how-to-container{
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.how-to-arrow-text{
+    color: var(--how-to-arrow-text-color);
+    font-weight: 600;
+}
+
+.btn-how-it-sell{
+    padding: 14px 22px;
+    color: white;
+    background-color: var(--sign-up-btn-color);
+    width: 200px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+
 }
