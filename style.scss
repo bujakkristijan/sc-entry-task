@@ -5,12 +5,77 @@
     font-style: normal;
   }
 
+  
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+
+:root{
+    --header-background: #E6F0FF;
+    --nav-link-color: #4F5361;
+    --sign-up-btn-color: #0F1B4C;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
 }
-.title{
-    color: green;
-    font-size: 64px;
-    font-weight: 700;
+
+header{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--header-background);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 38px;
+    padding-left: 165px;
+    padding-right: 165px;
+    align-items: center;
+}
+
+.image-logo{
+    height: 24px;
+}
+
+.nav-links-container{
+    margin-left: 80px;
+    margin-right: auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-link{
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--nav-link-color);
+    // font-weight: 600;
+}
+
+.nav-buttons-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-sign-up-btn, .nav-register-btn{
+    font-size: 14px;
+}
+
+.nav-sign-up-btn{
+    color: var(--sign-up-btn-color);
+}
+
+.nav-register-btn{
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--sign-up-btn-color);
+    color: white;
 }
 
