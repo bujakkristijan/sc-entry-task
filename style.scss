@@ -20,6 +20,8 @@
     --hc-text-color-3: #687690;
     --hc-text-color-1: #000336;
     --hc-text-color-2: #5A6473;
+    --logo-color: #101010;
+    --client-desc-color: #7D8589;
 }
 
 body{
@@ -135,4 +137,38 @@ header{
     color: white;
     width: 170px;
     border-radius: 8px;
+}
+
+/** Client section **/
+
+.client-main-container{
+    padding: 100px 165px;
+}
+
+.client-content-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-logo-client{
+    height: 24px;
+}
+
+.client-description-text, .client-review-description{
+    margin-top: 12px;
+    font-size: 16px;
+    color: var(--client-desc-color);
+}
+
+// .client-title-text{
+//     font-size: 24px;
+//     color: var(--logo-color);
+//     font-weight: 600;
+// }
+
+.client-logos-container{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
