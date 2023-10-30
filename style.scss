@@ -27,6 +27,8 @@
     --how-to-text-color: #3B3C45;
     --featured-bg-color: #F5FAFE;
     --featured-desc-color: #A3A6AB;
+    --numbers-desc-card-color: #A7A7A7;
+    --numbers-desc-line-color: #E9E9E9;
     
 
 }
@@ -349,3 +351,136 @@ header{
 
 }
 
+/************** NUMBERS ***************/
+
+.numbers-main-container{
+    padding-top: 40px; /* smanjujem malo jer je slika sa pozadinom belom pa je sve poremeceno malo */
+    padding-left: 185px;
+    padding-right: 185px;
+    position: relative;
+}
+
+.numbers-box-container.right-box{
+    width: 309px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 160px; /* ovako da bolje centriram, mada ne treba tako jer je poremeceno sve zbog slike koja ima belu pozadinu */
+}
+
+.numbers-boxes-container{
+    display: flex;
+    justify-content: center;
+}
+
+.numbers-image-container{
+    // height: 460px;
+    // width: 400px;
+    // height: 800px;
+    width: 700px;
+}
+
+.image-numbers{
+    height: 100%;
+    width: 100%;
+}
+
+.numbers-positioned-card-container{
+    position: absolute;
+    top: 74px; /* ovako pogodim da bude u liniji, mada poremeceno jer je slika sa belom pozadinom */ 
+    left: 0;
+    background-color: white;
+    width: 240px;
+    border-radius: 0 0 12px 12px;
+    padding-top: 30px;
+   
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+
+.numbers-box-container{
+    position: relative;
+}
+
+.image-users{
+    width: 200px;
+}
+
+.numbers-card-description{
+    font-size: 12px;
+}
+
+.numbers-card-title-and-arrow-zig-zag-container{
+    display: flex;
+    justify-content: space-between;
+}
+.numbers-card-title-text{
+    font-size: 26px;
+    color: var(--hiw-title-color);
+}
+.numbers-card-description{
+    color: var(--numbers-desc-card-color);
+}
+
+.numbers-card-description::after{
+   content: "";
+   height: 1.2px;
+   display: block;
+   width: 100%;
+   background-color: var(--numbers-desc-line-color);
+   margin-top: 10px;
+   margin-bottom: 6px;
+}
+
+.numbers-card-title-text, .numbers-card-description{
+    margin-left: 12px;
+    
+}
+
+.numbers-title-right::before{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 41px;
+    margin-bottom: 8px;
+    background-color: var(--hiw-title-color);
+}
+
+.numbers-title-right{
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--hiw-title-color);
+    margin-bottom: 12px;
+}
+
+.numbers-description-right{
+    color: var(--hc-text-color-2);
+    font-size: 16px;
+}
+
+.numbers-countdown-container{
+    display: flex;
+    // justify-content: space-around;
+    position: absolute;
+    /* Da ih centriram, mada ovo je los nacin, sve zbog toga sto je slika sa belom pozadinom, zapetljalo se sve dosta */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -40px;
+}
+
+.numbers-countdown-number{
+    font-size: 64px;
+    color: black;
+    font-weight: 600
+}
+
+.numbers-countdown-description{
+    font-size: 18px;
+    color: var(--client-desc-color);
+}
+
+.numbers-countdown-box-container{
+    margin-left: 90px;
+    margin-right: 90px;
+}
