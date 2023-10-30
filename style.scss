@@ -5,6 +5,27 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins-v20-latin-500.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins-v20-latin-600.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins-v20-latin-700.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
   
 *{
     margin: 0;
@@ -68,7 +89,8 @@ header{
 }
 
 .nav-link{
-    font-size: 14px;
+    // font-size: 14px;
+    font-weight: 500;
     line-height: 21px;
     color: var(--nav-link-color);
     // font-weight: 600;
@@ -85,7 +107,7 @@ header{
 }
 
 .nav-sign-up-btn{
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .nav-sign-up-btn{
@@ -343,6 +365,10 @@ header{
     margin-bottom: 10px;
 }
 
+.featured-card-info-box-text{
+    font-weight: 500;
+}
+
 .featured-card-info-box{
     display: flex;
     margin-right: 12px;
@@ -423,6 +449,7 @@ header{
 .numbers-card-title-text{
     font-size: 26px;
     color: var(--hiw-title-color);
+    font-weight: 600;
 }
 .numbers-card-description{
     color: var(--numbers-desc-card-color);
