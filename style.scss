@@ -17,10 +17,14 @@
     --header-background: #E6F0FF;
     --nav-link-color: #4F5361;
     --sign-up-btn-color: #0F1B4C;
+    --hc-text-color-3: #687690;
+    --hc-text-color-1: #000336;
+    --hc-text-color-2: #5A6473;
 }
 
 body{
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 header{
@@ -32,10 +36,11 @@ header{
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding-top: 38px;
+    // padding-top: 38px;
     padding-left: 165px;
     padding-right: 165px;
     align-items: center;
+    height: 15vh;
 }
 
 .image-logo{
@@ -72,10 +77,62 @@ header{
 }
 
 .nav-register-btn{
-    padding: 12px 18px;
+    padding: 12px 22px;
     border: none;
     border-radius: 8px;
     background-color: var(--sign-up-btn-color);
     color: white;
 }
 
+.header-content-container{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.header-content-text-container{
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 165px;
+}
+.header-content-image-container{
+    flex: 50%;
+    // height: 619px;
+}
+
+.image-header{
+    // height: 619px;
+    height: 100%;
+}
+
+.hc-text-welcome{
+    font-size: 18px;
+    color: var(--hc-text-color-3);
+}
+
+.hc-text-title{
+    color:#000336;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 76px;
+    margin-top: 18px;
+    margin-bottom: 24px;
+}
+
+.hc-text-description{
+    color: var(--hc-text-color-2);
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+.hc-button{
+    padding: 14px 22px;
+    background-color: var(--sign-up-btn-color);
+    color: white;
+    width: 170px;
+    border-radius: 8px;
+}
