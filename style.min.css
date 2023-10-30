@@ -1,1 +1,1 @@
-h1{color:green;font-size:60px}
+@font-face{font-family:Poppins;src:url(fonts/poppins-v20-latin-regular.woff2) format("woff2");font-weight:400;font-style:normal}body{font-family:Poppins,sans-serif}.title{color:green;font-size:64px;font-weight:700}
