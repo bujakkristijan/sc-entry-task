@@ -25,7 +25,8 @@
     --hiw-title-color: #000339;
     --how-to-arrow-text-color: #0689FF;
     --how-to-text-color: #3B3C45;
-
+    --featured-bg-color: #F5FAFE;
+    --featured-desc-color: #A3A6AB;
     
 
 }
@@ -256,3 +257,95 @@ header{
     margin-top: 80px;
 
 }
+
+
+/*********** FEATURED **************/
+
+.featured-main-container{
+    padding: 100px 165px;
+    background-color: var(--featured-bg-color);
+}
+
+.featured-text-container{
+    margin-top: 8px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-arrow-container{
+    display: flex;
+    gap: 10px;
+}
+
+.featured-title{
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--hiw-title-color);
+}
+
+.featured-description{
+    color: var(--hc-text-color-2);
+    font-size: 16px;
+}
+.featured-arrow-text{
+    color: var(--how-to-arrow-text-color);
+}
+
+.featured-cards-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.image-featured-card{
+    // width: 360px;
+    width: 100%;
+    height: 100%;
+}
+
+.featured-card-image-container{
+    width: 360px;
+    height: 227px;
+}
+
+.featured-card-sub-container{
+    background-color: white;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.featured-card-sub-container{
+    padding: 16px;
+}
+
+.featured-card-price-text{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--hiw-title-color)
+}
+
+.featured-card-street-text{
+    font-size: 14px;
+    color: var(--featured-desc-color);
+}
+
+.featured-card-info-container{
+    display: flex;
+    // justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.featured-card-info-box{
+    display: flex;
+    margin-right: 12px;
+    gap: 8px;
+}
+
+.featured-card-info-box-logo{
+    display: flex;
+    text-align: center;
+    margin: auto; /* bez ovog bude razvuceno malo zbog flex */
+
+}
+
