@@ -26,6 +26,23 @@
     font-style: normal;
 }
 
+/* lato-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/lato-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
   
 *{
     margin: 0;
@@ -51,6 +68,7 @@
     --numbers-desc-card-color: #A7A7A7;
     --numbers-desc-line-color: #E9E9E9;
     --newsletter-bg-color:  #002366;
+    --footer-copyright-color: #C2C2C2;
     
 
 }
@@ -148,7 +166,9 @@ header{
 
 .hc-text-welcome{
     font-size: 18px;
+    font-weight: 500;
     color: var(--hc-text-color-3);
+    letter-spacing: 1px;
 }
 
 .hc-text-title{
@@ -581,4 +601,69 @@ header{
 
 .newsletter-image{
     height: 440px;
+}
+
+/************ FOOTER **************/
+
+.footer-main-container{
+    padding-left: 165px;
+    padding-right: 165px;
+}
+
+.footer-first-row-main-container{
+    display: flex;
+    // margin-left: 165px;
+    // margin-right: 165px;
+}
+
+.footer-first-row-container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+}
+
+.footer-list-item-text.desc{
+    width: 260px;
+    white-space: wrap;
+    margin-top: 4px;
+}
+
+.footer-list-title{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Lato';
+    color: var(--logo-color)
+}
+
+.footer-list-item-text{
+    font-size: 16px;
+    color: var(--client-desc-color);
+    margin-bottom: 18px;
+    white-space: nowrap; /* da ne prelazi u drugi red */
+}
+
+.footer-list-item-container{
+    margin-top: 32px;
+}
+
+.footer-social-container{
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.footer-second-row-container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo-img{
+    height: 24px;
+}
+
+.footer-copyright-text{
+    font-size: 14px;
+    color: var(--footer-copyright-color);
 }
