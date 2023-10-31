@@ -142,6 +142,27 @@ body{
     // font-weight: 600;
 }
 
+.nav-link::after{
+    content: "";
+    margin-top: 5px;
+    height: 3px;
+    width: 0%;
+    background: var(--sign-up-btn-color);
+    display: block;
+    margin-left: auto;  /* sa margin auto se stavi da tranzicija ide od sredine pa prema krajevima, bez ovoga bi islo od pocetka (levo) do kraja (desno) */
+    margin-right: auto;
+    transition: 0.5s;
+    border-radius: 100px;
+}
+
+.nav-link:hover{
+    cursor: pointer;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
 .nav-buttons-container{
     display: flex;
     align-items: center;
@@ -152,7 +173,12 @@ body{
     font-size: 14px;
 }
 
+.nav-register-btn{
+    cursor: pointer;
+}
+
 .nav-sign-up-btn{
+    cursor: pointer;
     font-weight: 500;
 }
 
