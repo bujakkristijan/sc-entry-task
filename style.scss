@@ -241,10 +241,15 @@ header{
         padding-left: 0;
         width: 80%;
         margin: auto;
+        text-align: center;
     }
     .hc-text-title{
         font-size: 30px;
         line-height: 38px;
+    }
+    .hc-button{
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -286,16 +291,22 @@ header{
 @media(max-width: 1200px){
     .client-content-container{
         flex-direction: column;
+        text-align: center;
     }
     .client-logos-container{
         flex-direction: column;
+        margin-top: 60px;
+        gap: 30px;
     }
     .client-main-container{
         // margin-top: 45vh;
         padding: 0;
         width: 80%;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
     }
+    
 }
 
 /***************** HOW IT WORKS ********************/
@@ -379,6 +390,8 @@ header{
 @media(max-width: 900px){
     .how-it-works-seller-type-container{
         flex-direction: column;
+        gap: 60px;
+        margin-top: 60px;
     }
     .how-it-works-description{
         width: auto;
@@ -390,6 +403,10 @@ header{
     }
     .how-to-container{
         justify-content: center;
+    }
+    
+    .how-it-works-text-container{
+        margin-top: 60px;
     }
 }
 
@@ -502,8 +519,8 @@ header{
     }
     .featured-main-container{
         padding: 0;
-        padding-top: 20px;
-        margin-top: 20px;
+        padding-top: 60px;
+        margin-top: 60px;
         // width: 80%;
         
     }
@@ -817,6 +834,11 @@ header{
     .newsletter-button{
         margin: auto;
     }
+    .newsletter-description{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /************ FOOTER **************/
@@ -890,5 +912,30 @@ header{
     }
     .footer-second-row-container{
         flex-direction: column;
+    }
+
+    .footer-main-container{
+        padding: 0;
+    }
+    .footer-first-row-container{
+        margin-right: 0;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    .footer-list-item-text.desc{
+        width: 80%;
+        margin: auto;
+        
+    }
+    .footer-social-container{
+        justify-content: center;
+    }
+    .footer-second-row-container{
+        text-align: center;
+    }
+    .footer-logo-container{
+        margin-bottom: 16px;
     }
 }
