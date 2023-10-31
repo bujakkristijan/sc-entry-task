@@ -98,6 +98,12 @@ body{
 
 /********** SCROLL BAR END ************/
 
+/*********** HEADER ************/
+
+.x-icon, .bars-icon{
+    display: none;
+}
+
 header{
     height: 100vh;
     width: 100vw;
@@ -215,6 +221,34 @@ header{
     border-radius: 8px;
 }
 
+/******* mobile screen size header *********/
+
+@media(max-width: 1200px){
+    .x-icon, .bars-icon{
+        display: block;
+    }
+    .nav-links-container{
+        display: block;
+    }
+    .header-content-container{
+        flex-direction: column;
+        // margin-top: 45vh;
+    }
+    .header-content-image-container{
+        display: none;
+    }
+    .header-content-text-container{
+        padding-left: 0;
+        width: 80%;
+        margin: auto;
+    }
+    .hc-text-title{
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+
+
 /** Client section **/
 
 .client-main-container{
@@ -247,6 +281,21 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@media(max-width: 1200px){
+    .client-content-container{
+        flex-direction: column;
+    }
+    .client-logos-container{
+        flex-direction: column;
+    }
+    .client-main-container{
+        // margin-top: 45vh;
+        padding: 0;
+        width: 80%;
+        margin: auto;
+    }
 }
 
 /***************** HOW IT WORKS ********************/
@@ -327,6 +376,23 @@ header{
 
 }
 
+@media(max-width: 900px){
+    .how-it-works-seller-type-container{
+        flex-direction: column;
+    }
+    .how-it-works-description{
+        width: auto;
+    }
+    .how-it-works-main-container{
+        padding: 0;
+        width: 80%;
+        margin: auto;
+    }
+    .how-to-container{
+        justify-content: center;
+    }
+}
+
 
 /*********** FEATURED **************/
 
@@ -364,6 +430,7 @@ header{
 .featured-cards-container{
     display: flex;
     justify-content: space-between;
+    // flex-wrap: wrap;
     
 }
 .image-featured-card{
@@ -420,6 +487,56 @@ header{
     text-align: center;
     margin: auto; /* bez ovog bude razvuceno malo zbog flex */
 
+}
+
+@media(max-width: 900px){
+    
+}
+
+@media(max-width: 1400px){
+    .featured-cards-container{
+        // justify-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px
+    }
+    .featured-main-container{
+        padding: 0;
+        padding-top: 20px;
+        margin-top: 20px;
+        // width: 80%;
+        
+    }
+    .featured-title{
+        width: 80%;
+        margin: auto;
+        font-size: 24px;
+        text-align: center;
+    }
+    .featured-text-container{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .featured-text-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .featured-arrow-container{
+        justify-content: center;
+    }
+    .featured-cards-container{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .featured-card-image-container{
+        width: auto;
+        height: auto;
+    }
+    .featured-description{
+        margin-bottom: 20px;
+    }
 }
 
 /************** NUMBERS ***************/
@@ -557,6 +674,61 @@ header{
     margin-right: 90px;
 }
 
+
+@media(max-width: 1200px){
+    .numbers-boxes-container{
+        flex-direction: column;
+    }
+    .numbers-countdown-container{
+        flex-direction: column;
+        position: relative;
+        margin-top: 30px;
+    }
+    .numbers-main-container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .numbers-image-container{
+        width: auto;
+    }
+    .numbers-positioned-card-container{
+        position: relative;
+        margin: auto;
+    }
+    .numbers-box-container.right-box{
+        width: 80%;
+        margin: auto;
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+    .numbers-title-right{
+        font-size: 22px;
+        text-align: center;
+    }
+    .numbers-title-right::before{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .numbers-description-right{
+        text-align: center;
+    }
+    .numbers-countdown-box-container{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .numbers-countdown-number, .numbers-countdown-description{
+        text-align: center;
+        
+    }
+    .numbers-countdown-number{
+        font-size: 34px;
+    }
+    
+    
+}
+
 /************** NEWSETTLER ****************/
 
 .newsletter-main-container{
@@ -623,6 +795,30 @@ header{
     height: 440px;
 }
 
+@media(max-width: 1200px){
+    .newsletter-image-container{
+        display: none;
+    }
+    .newsletter-text-container{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+
+    }
+    .newsletter-main-container{
+        margin-top: 0;
+        
+    }
+    .newsletter-sub-text-container{
+        padding-left: 0;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .newsletter-button{
+        margin: auto;
+    }
+}
+
 /************ FOOTER **************/
 
 .footer-main-container{
@@ -686,4 +882,13 @@ header{
 .footer-copyright-text{
     font-size: 14px;
     color: var(--footer-copyright-color);
+}
+
+@media(max-width: 1200px){
+    .footer-first-row-main-container{
+        flex-direction: column;
+    }
+    .footer-second-row-container{
+        flex-direction: column;
+    }
 }
