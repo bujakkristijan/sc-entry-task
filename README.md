@@ -1,5 +1,5 @@
 ## Run demo here:
-# https://bujakkristijan.github.io/sc-entry-task/
+### https://bujakkristijan.github.io/sc-entry-task/
 
 **Design from Figma**:
 
