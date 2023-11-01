@@ -582,6 +582,9 @@ body{
     .featured-card-info-box-text{
         font-size: 12px;
     }
+    .featured-card-info-container{
+        justify-content: space-between;
+    }
 }
 
 @media(max-width: 1400px){
